@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-v1",
+  "version": "1.0.0",
+  "description": "## Marcus Robinson's professional resume.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch ./scss/home.scss -o ./css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrob01/portfolio-v1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marrob01/portfolio-v1/issues"
+  },
+  "homepage": "https://github.com/marrob01/portfolio-v1#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "node-sass": "^6.0.0"
+  }
+}
