@@ -3828,13 +3828,6 @@ body {
   margin: 0;
   scroll-behavior: smooth;
   background-color: #dde5dd; }
-  body #body-content {
-    clip-path: polygon(100% 0%, 66% 50%, 100% 100%, 63% 100%, 27% 50%, 63% 0);
-    background-color: #783F61;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: -1; }
 
 #nav-body {
   font-family: 'Lora', serif;
@@ -3916,31 +3909,37 @@ body {
       text-decoration: underline;
       font-weight: bold; }
 
-@media (min-width: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1400px) md) {
-  .skills {
-    background-color: blue; } }
+@media (min-width: 768px) {
+  .skills-box {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px; } }
 
-.head-pic {
+.head .head-pic {
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 40px; }
-  .head-pic h1 {
-    font-family: 'Mate SC', serif;
-    text-transform: uppercase;
-    letter-spacing: 2px; }
-  .head-pic img {
+  .head .head-pic img {
     height: 430;
     width: 300px;
-    box-shadow: gray 0 0  20px;
+    box-shadow: gray 0 0  10px;
     border: 1px solid white; }
 
-.about {
+.head .head-text {
   width: 100%;
   margin: 0 auto;
   padding: 10px; }
-  .about .btn {
+  .head .head-text .btn {
     background-color: #A05481; }
+
+@media (min-width: 992px) {
+  .head {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding: 10px;
+    margin: 0 auto; }
+    .head .head-text {
+      padding-top: 35px; } }
 
 #project-c {
   padding-top: 200px; }
@@ -3954,6 +3953,7 @@ body {
 .project-description-box {
   padding-top: 50px; }
   .project-description-box .project-description {
-    text-align: center; }
+    text-align: center;
+    padding: 10px; }
     .project-description-box .project-description button {
       background-color: #A05481; }

@@ -39,18 +39,18 @@ body{
     scroll-behavior: smooth;
     background-color: #dde5dd;
 
-    #body-content{
+    // #body-content{
     
-        clip-path: polygon(100% 0%, 66% 50%, 100% 100%, 63% 100%, 27% 50%, 63% 0);
+    //     clip-path: polygon(100% 0%, 66% 50%, 100% 100%, 63% 100%, 27% 50%, 63% 0);
 
 
-        background-color: #783F61;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
+    //     background-color: #783F61;
+    //     width: 100%;
+    //     height: 100%;
+    //     position: absolute;
+    //     z-index: -1;
 
-    }
+    // }
 }
 
 
@@ -194,44 +194,57 @@ body{
 
 }
 
-@media (min-width : $grid-breakpoints md){
-    .skills{
-        background-color: blue;
+@include media-breakpoint-up(md) {
+    .skills-box{
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 10px;
     }
 
 }
 
-.head-pic{
+.head{
+    .head-pic{
     
-    text-align: center;
-    margin-left:auto;
-    margin-right:auto;
-    padding-top: 40px;
-    
-
-    h1{
-        font-family: 'Mate SC', serif;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        text-align: center;
+        padding-top: 40px;
+        
+        img{
+            height:430;
+            width:300px;
+            box-shadow: gray 0 0  10px;
+            border: 1px solid white;
+        }
     }
 
-    img{
-        height:430;
-        width:300px;
-        box-shadow: gray 0 0  20px;
-        border: 1px solid white;
+    .head-text{
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+
+        .btn{
+            background-color:#A05481;
+           
+        }
+      
+
     }
 
 }
 
-.about{
-    width: 100%;
-    margin: 0 auto;
-    padding: 10px;
+@include media-breakpoint-up(lg) {
+    .head{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;
+        padding:10px;
+        margin: 0 auto;
 
-    .btn{
-        background-color:#A05481;
+        .head-text{
+            padding-top: 35px;
+        }
     }
+
 }
 
 
@@ -262,6 +275,7 @@ body{
 
     .project-description{
         text-align: center;
+        padding: 10px;;
 
         button{
             background-color:#A05481 ;
